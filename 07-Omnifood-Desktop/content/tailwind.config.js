@@ -2,7 +2,7 @@
 module.exports = {
   mode: "jit",
   darkMode: "class",
-  purge: ["./build/**/*.{html,js}"],
+  content: ["./build/**/*.{html,js}"],
   theme: {
     extend: {
       fontFamily: {
@@ -15,9 +15,16 @@ module.exports = {
       orange: "#e67e22",
       dorange: "#b45309",
       lorange: "#cf711f",
+      ltorange: "#eb984e",
       white: "#ffffff",
       gray: "#555",
       dgray: "#333",
+      lgray: "#ddd",
+      ltgray: "#777",
+      green: "#51cf66",
+      lgreen: "#94d82d",
+      yellow: "#ffd43b",
+      brown: "#2e1907",
     },
   },
   plugins: [],

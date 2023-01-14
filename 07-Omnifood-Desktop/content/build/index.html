@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Omnifood - Never cook again!</title>
-  </head>
-  <body class="dark:true dark:bg-black">
+</head>
+<body class="dark:true dark:bg-black">
     <header
-      class="fixed flex h-24 w-full items-center justify-between bg-linen px-10 py-0"
+        class="fixed flex h-24 w-full items-center justify-between bg-linen px-10 py-0"
     >
-      <img src="./img/omnifood-logo.png" alt="Omnifood Logo" class="h-6" />
-      <nav>
+        <img src="./img/omnifood-logo.png" alt="Omnifood Logo" class="h-6" />
+        <nav>
         <ul class="flex items-center gap-10">
-          <li>
+            <li>
             <a
-              href="#"
-              class="font-rubik text-lg font-semibold text-dgray transition-all duration-500 hover:text-lorange"
-              >How it works</a
+                href="#"
+                class="font-rubik text-lg font-semibold text-dgray transition-all duration-500 hover:text-lorange"
+            >How it works</a
             >
           </li>
           <li>
@@ -950,39 +950,113 @@
             </p>
           </div>
         </div>
-      </section>
-      <section>
+    </section>
+    <section>
         <div
-          class="mx-auto my-0 mb-20 grid max-w-screen-xl grid-cols-3 overflow-hidden rounded-lg bg-gradient-to-b from-ltorange to-orange shadow-2xl"
+            class="mx-auto my-0 mb-32 grid max-w-screen-xl grid-cols-3 overflow-hidden rounded-lg bg-gradient-to-b from-ltorange to-orange shadow-2xl"
         >
-          <div class="col-span-2 px-10 py-10">
-            <h2 class="pb-10 text-5xl font-bold text-brown">
-              Get your first meal for free!
-            </h2>
-            <p class="pb-10 text-lg text-dgray">
-              Healthy, tasty and hassle-free meals are waiting for you. Start
-              eating well today. You can cancel or pause anytime. And the first
-              meal is on us!
-            </p>
-            <form class="grid grid-cols-2 grid-rows-2 gap-10"></form>
-          </div>
-          <div>
-            <img
-              src="./img/eating.jpg"
-              alt="Eating"
-              class="bg-cover bg-center"
-            />
-          </div>
+            <div class="col-span-2 px-20 pt-10">
+                <h2 class="pb-10 text-5xl font-bold text-brown">
+                Get your first meal for free!
+                </h2>
+                <p class="mb-10 text-lg text-dgray">
+                    Healthy, tasty and hassle-free meals are waiting for you. Start
+                    eating well today. You can cancel or pause anytime. And the first
+                    meal is on us!
+                </p>
+            <form class="grid grid-cols-2 grid-rows-2 gap-y-9 gap-x-12" action="#">
+                <div>
+                    <label for="full-name" class="block font-bold text-brown">Full Name</label>
+                    <input type="text" id="full-name" placeholder="Jason Ha" required class="bg-linen rounded-lg px-2 py-3 focus:outline-none focus:ring-8 mt-2 w-full focus:ring-slate-200">
+                </div>
+                <div>
+                    <label for="email" class="block font-bold text-brown">Email address</label>
+                    <input type="text" placeholder="dev@gmail.com" id="email" required class="bg-linen rounded-lg px-2 py-3 focus:outline-none focus:ring-8 focus:ring-white mt-2 w-full">
+                </div>
+                <div>
+                    <label for="select-where" class="font-bold text-brown block">Where did you hear from us?</label>
+                    <select id="select-where" class="focus:outline-none focus:ring-8 focus:ring-white bg-linen rounded-lg px-2 py-3 mt-2 w-full" required>
+                        <option value="" disabled selected>Please choose one option:</option>
+                        <option value="fnf">Friends and Family</option>
+                        <option value="youtube">Youtube video</option>
+                        <option value="podcast">Podcast</option>
+                        <option value="facebook">Facebook Ad</option>
+                        <option value="others">Others</option>
+                    </select>
+                </div>
+                <div>
+                    <a
+                    href="#"
+                    class="mr-2 box-border inline-block rounded-lg bg-brown px-8 py-2.5 text-center font-inter text-xl font-semibold text-white transition-all duration-500 hover:bg-white hover:text-dgray focus:outline-none focus:ring-7 focus:ring-white mt-8 w-full focus:shadow-transparent"
+                    >
+                    Sign Up now
+                    </a>
+                </div>
+            </form>
         </div>
-      </section>
+        <div>
+            <img
+                src="./img/eating.jpg"
+                alt="Eating"
+                class="bg-cover bg-center"
+            />
+        </div>
+    </section>
+        <hr class="w-full mb-28 text-ltgray bg-ltgray">
     </main>
+    <footer>
+        <div class="mx-auto my-0 grid grid-cols-5 max-w-screen-xl mb-32 gap-x-24">
+            <div>
+                <img src="./img/omnifood-logo.png" alt="Omnifood Logo">
+                <ul class="flex gap-x-5 pt-5 pb-10">
+                    <li>
+                        <ion-icon name="logo-instagram" class="h-6 w-6"></ion-icon>
+                    </li>
+                    <li>
+                        <ion-icon name="logo-facebook" class="h-6 w-6"></ion-icon>
+                    </li>
+                    <li>
+                        <ion-icon name="logo-twitter" class="h-6 w-6"></ion-icon>
+                    </li>
+                </ul>
+                <p class="text-sm text-ltgray">Copyright © 2023 by Omnifood, Inc. All rights reserved.</p>
+            </div>
+            <div class="flex flex-col justify-between text-ltgray">
+                <h2 class="text-lg text-gray font-semibold">Contact Us</h2>
+                <p>623 Harrison St., 2nd Floor, San Francisco, CA 94107</p>
+                <p class="mt-5">415-201-6370</p>
+                <p>chuanha.dev@gmail.com</p>
+            </div>
+            <div class="flex flex-col justify-between text-ltgray">
+                <h2 class="text-lg text-gray font-semibold">Account</h2>
+                <a href="#">Create account</a>
+                <a href="#">Sign in</a>
+                <a href="#">IOS app</a>
+                <a href="#">Android app</a>
+            </div>
+            <div class="flex flex-col justify-between text-ltgray">
+                <h2 class="text-lg text-gray font-semibold">Company</h2>
+                <a href="#">About</a>
+                <a href="#">For Business</a>
+                <a href="#">Cooking partners</a>
+                <a href="#">Careers</a>
+            </div>
+            <div class="flex flex-col justify-between text-ltgray">
+                <h2 class="text-lg text-gray font-semibold">Resources</h2>
+                <a href="#">Recipe directory</a>
+                <a href="#">Help center</a>
+                <a href="#">Privacy & terms</a>
+                <a href="#"></a>
+            </div>
+        </div>
+    </footer>
     <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+        type="module"
+        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
     ></script>
     <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+        nomodule
+        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
-  </body>
+</body>
 </html>
